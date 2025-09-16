@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENSTA GRAM</title>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #222;
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Flex container for content */
+    .content {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    main {
+      width: 80%;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    aside {
+      width: 20%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-left: 1px solid #ccc;
+      text-align: center;
+    }
+
+    aside img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    aside h3 {
+      margin: 10px 0 5px;
+    }
+
+    .news-feed {
+      margin-bottom: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .post img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    /* Post actions */
+    .post-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .post-actions button {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #eee;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-weight: bold;
+    }
+
+    .post-actions button:hover {
+      background: #ddd;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      text-align: center;
+      background: #222;
+      color: white;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header>
+    <div class="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Log-in</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Flex container: main + aside -->
+  <div class="content">
+    <main>
+      <div class="news-feed">
+        <div class="post">
+          <h3>Labubu Marcos</h3>
+          <p>Felt cute, might delete later</p>
+          <img src="../SRC/labubu.jpg">
+          <div class="post-actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>↗️ Share</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-feed">
+        <div class="post">
+          <h3>BELUGA</h3>
+          <p>HELLO</p>
+          <img src="../SRC/belugapost.jpg">
+          <div class="post-actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>↗️ Share</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-feed">
+        <div class="post">
+          <h3>Yellow Dino</h3>
+          <p>HMMP!!</p>
+          <img src="../SRC/hmmp.jpg">
+          <div class="post-actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>↗️ Share</button>
+          </div>
+        </div>
+
+        <div class="news-feed">
+        <div class="post">
+          <h3>F1 Updates</h3>
+          <p>uhhhh....</p>
+          <img src="../SRC/f1.jpg">
+          <div class="post-actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>↗️ Share</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-feed">
+        <div class="post">
+          <h3>Messi</h3>
+          <p>WTH is this??</p>
+          <img src="../SRC/messi.jpg">
+          <div class="post-actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>↗️ Share</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 ENSTA GRAM. Developer: Carl Stephen M. Quilopras.</p>
+      </footer>
+    </main>
+
+    <!-- Sidebar with profile (now correctly placed) -->
+    <aside>
+      <img src="../SRC/carl.jpg" alt="My Profile Picture">
+      <h3>Stephen Archives</h3>
+      <p>@stephen</p>
+    </aside>
+  </div>
+</body>
+</html>

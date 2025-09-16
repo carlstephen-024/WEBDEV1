@@ -1,0 +1,138 @@
+/* Reset & Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+/* Sticky Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Page Layout */
+.content {
+  display: flex;
+}
+
+main {
+  width: 80%;
+  padding: 20px;
+}
+
+aside {
+  width: 20%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+
+aside img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* News Feed & Posts */
+.news-feed {
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Post Buttons */
+.post-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: bold;
+}
+
+.post-actions button:hover {
+  background: #ddd;
+}
+
+/* Forms (Signup / Settings) */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #444;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
